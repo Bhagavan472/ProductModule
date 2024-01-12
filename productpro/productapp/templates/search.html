@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    
+    
+  <div style="background-image: url('https://media.licdn.com/dms/image/C4D12AQHch0Rsn8MkjQ/article-cover_image-shrink_720_1280/0/1607578733891?e=2147483647&v=beta&t=ZdXzDSL_JviHDHrHUjn6iSil7CDup-MS1M2nLmvyMOQ');background-repeat:no-repeat;background-size: cover;height:100vh">
+      
+    <div style="text-align: center;padding-top: 100px;padding-right: 250px;">
+    <form method="POST">
+        {% csrf_token %}
+        
+        <select style="height: 50px;width:200px;border-width: 2px;border-color: black;border-radius: 15px;font-weight: bold;" name="location">
+            <option for="location" value="madhapur">madhapur</option>
+            <option for="location" value="jubileehills">jubileehills</option>
+            <option for="location" value="miyapur">miyapur</option>
+            <option for="location" value="uppal">uppal</option>
+            <option for="location" value="ameerpet">ameerpet</option>
+        </select>
+        <button style="height: 30px;width:120px;background-color:dimgrey;color: white;font-weight: bold;border-radius: 10px" type="submit">Search</button>
+    </form>
+  </div>
+  </div>
+</body>
+</html>

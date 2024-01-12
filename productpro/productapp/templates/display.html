@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div style="background-image: url('https://img.freepik.com/premium-photo/fresh-vegetables-light-background-top-view-flat-lay-banner_164357-14888.jpg?w=1380');background-repeat: no-repeat;background-size: cover;height: 100vh;background-attachment: scroll;">
+
+    <h1> Products</h1>
+      <div>
+        
+        {% for r in mydata %}
+        <div>
+            <p style="color: green;font-size: 35px;font-weight: bold;">Farm Name: {{r.farm}}</p>
+            <p style="font-size: 35px;">Product: {{r.product}}</p>
+            <p style="font-size: 25px;">Quantity Available(inKg): {{r.quantity}}</p>
+            <p style="font-size: 28px;">Price(Per Kg): {{r.price}}/-</p>
+
+            <button style="background-color: azure;color: black;height: 40px;width:130px;font-weight: bold;">Add to Cart</button>
+
+            <p>------------------------------------</p>
+
+
+        </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+
+
+</body>
+</html>
